@@ -1,0 +1,39 @@
+header {
+    background-color: cadetblue;
+    grid-area: header;
+}
+
+nav {
+    background-color: chartreuse;
+    grid-area: nav;
+}
+
+aside {
+    background-color: palevioletred;
+    grid-area: aside;
+}
+
+main {
+    background-color: rebeccapurple;
+    grid-area: main;
+}
+
+footer {
+    background-color: goldenrod;
+    grid-area: footer;
+}
+
+#parent {
+    background-color: coral;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2fr 1fr 3fr 1fr;
+    grid-template-areas: 
+    'header header header'
+    'nav nav nav'
+    'aside main main'
+    'footer footer footer';
+    height: 95vh;
+    text-align:center;
+}
