@@ -1,0 +1,34 @@
+body{
+    display:grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 5fr;
+    box-sizing: border-box;
+    margin: 0px;
+    height: 100vh;
+    grid-template-areas: 
+        "header header"
+        "aside main";
+}
+
+header{
+    grid-area: header;
+    background-color: yellow;
+}
+
+aside{
+    grid-area: aside;
+    background-color: aqua;
+}
+
+main{
+    grid-area: main;
+    background-color: blueviolet;
+}
+
+
+@media (min-width:1200px){
+   body{
+    h1{font-size: 2.5rem;}
+    p{font-size: 1.2rem;}
+   }
+}
